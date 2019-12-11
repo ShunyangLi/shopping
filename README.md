@@ -194,3 +194,31 @@ $ taro build --type rn --watch
 $ npx taro build --type rn --watch
 ```
 
+# Bugs and how to solve
+
+When you find the following error:
+
+```shell
+  name: 'ValidationError',
+  message: 'CopyPlugin Invalid Options\n\noptions should NOT have fewer than 1 items\n',
+  errors: [
+    {
+      keyword: 'minItems',
+      dataPath: '',
+      schemaPath: '#/minItems',
+      params: [Object],
+      message: 'should NOT have fewer than 1 items'
+    }
+  ]
+```
+
+You can solve by commenting few lines in the `config/index.js` file:
+
+```json
+  copy: {
+    patterns: [
+    ],
+    options: {
+    }
+  },
+```
