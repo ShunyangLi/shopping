@@ -1,5 +1,7 @@
 ![taro](https://img.shields.io/badge/License-taro-green.svg) 
 
+The document of taro. [HERE](http://taro-docs.jd.com/taro/docs/README.html)
+
 # How to install `taro`
 
 ```shell
