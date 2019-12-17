@@ -1,11 +1,10 @@
 import Taro, { Component } from '@tarojs/taro'
 import { View, Text } from '@tarojs/components'
-import './index.scss'
+import './cart.scss'
 
-export default class Index extends Component {
-
+export default class Cart extends Component {
   config = {
-    navigationBarTitleText: '小传奇购物平台'
+    navigationBarTitleText: '购物车'
   };
 
   componentWillMount () { }
@@ -21,8 +20,9 @@ export default class Index extends Component {
   render () {
     return (
       <View className='index'>
-        <Text>主页面</Text>
+        <Text>这是购物车页面</Text>
       </View>
     )
   }
+
 }
