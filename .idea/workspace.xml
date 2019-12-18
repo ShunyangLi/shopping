@@ -2,22 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8ff7433-2718-40ca-8f1b-54ac3202446e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/tab-bar/chat-active.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/tab-bar/chat.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/chat/chat.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/chat/chat.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/login/assets/LOGO.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/login/login.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/login/login.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/tab-bar/cart-active.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/tab-bar/cart-active.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/tab-bar/cart.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/tab-bar/cart.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/tab-bar/home-active.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/tab-bar/home-active.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/tab-bar/home.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/tab-bar/home.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/tab-bar/user-active.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/tab-bar/user-active.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/tab-bar/user.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/tab-bar/user.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/mixins.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/reset.scss" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/styles/theme.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/user/user.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/user/user.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,7 +24,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/assets/tab-bar" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages/login/assets" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.stylelint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -49,6 +41,7 @@
       <recent name="$PROJECT_DIR$/src/pages/index/swiper-component" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pages/login/assets" />
       <recent name="$PROJECT_DIR$/src/assets/tab-bar" />
       <recent name="$PROJECT_DIR$/src" />
     </key>

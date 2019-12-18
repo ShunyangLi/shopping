@@ -1,5 +1,5 @@
 import Taro, { Component } from '@tarojs/taro'
-import { View, Text } from '@tarojs/components'
+import {View, Text, Button} from '@tarojs/components'
 import './user.scss'
 
 export default class User extends Component {
@@ -18,10 +18,19 @@ export default class User extends Component {
 
   componentDidHide () { }
 
+  handleLogin = () => {
+    Taro.navigateTo({
+      url: '/pages/login/login'
+    }).then(res => {
+      console.log(res);
+    });
+  };
+
   render () {
     return (
       <View className='index'>
         <Text>这是用户中心</Text>
+        <Button onClick={this.handleLogin}>Login</Button>
       </View>
     )
   }
