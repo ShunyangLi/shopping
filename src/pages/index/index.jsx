@@ -1,6 +1,7 @@
 import Taro, { Component } from '@tarojs/taro'
-import {View, Text, Swiper, SwiperItem, Image} from '@tarojs/components'
+import {View, Text} from '@tarojs/components'
 import { AtSearchBar } from 'taro-ui'
+import SwiperCompoent from './swiper-component/swiperc'
 // import SwiperCompoent from './swiper-component/swiperc'
 import './index.scss'
 
@@ -10,6 +11,20 @@ export default class Index extends Component {
     super(...arguments);
     this.state = {
       searchValue: '',
+      items: [
+        {
+          key: '1',
+          url: 'http://littlegend.com/static/img/example3.jpg'
+        },
+        {
+          key: '2',
+          url: 'http://littlegend.com/static/img/example2.jpg'
+        },
+        {
+          key: '3',
+          url: 'http://littlegend.com/static/img/example1.jpg'
+        }
+      ]
     };
   }
 
@@ -81,27 +96,8 @@ export default class Index extends Component {
           onBlur={this.handleClear.bind(this)}
         />
 
-        {/*<SwiperCompoent items={this.state.items} />*/}
         {/* 首页图片滑动 */}
-        <Swiper
-          indicatorColor='#999'
-          className='home-banner__swiper'
-          indicatorActiveColor='#333'
-          vertical={false}
-          circular
-          indicatorDots
-          autoplay
-        >
-          <SwiperItem className='home-banner__swiper-item'>
-            <Image className='home-banner__swiper-item-img' src='http://littlegend.com/static/img/example3.jpg' />
-          </SwiperItem>
-          <SwiperItem className='home-banner__swiper-item'>
-            <Image className='home-banner__swiper-item-img' src='http://littlegend.com/static/img/example2.jpg' />
-          </SwiperItem>
-          <SwiperItem className='home-banner__swiper-item'>
-            <Image className='home-banner__swiper-item-img' src='http://littlegend.com/static/img/example3.jpg' />
-          </SwiperItem>
-        </Swiper>
+        <SwiperCompoent items={this.state.items} />
 
         <Text>主页面</Text>
       </View>
