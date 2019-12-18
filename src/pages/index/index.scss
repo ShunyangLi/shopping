@@ -1,0 +1,17 @@
+.home-banner__swiper {
+  // NOTE RN 的 Swiper 需要有高度，否则会报错
+  height: 340px;
+
+  &-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    &-img {
+      width: 690px;
+      height: 340px;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+  }
+}

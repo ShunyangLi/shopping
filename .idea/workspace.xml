@@ -2,21 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8ff7433-2718-40ca-8f1b-54ac3202446e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/assets/default-avatar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/tab-bar/cart-active.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/tab-bar/cart.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/tab-bar/cate-active.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/tab-bar/cate.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/tab-bar/home-active.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/tab-bar/home.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/tab-bar/user-active.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/assets/tab-bar/user.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/cart/cart.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/cart/cart.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/user/user.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/user/user.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
