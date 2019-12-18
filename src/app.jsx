@@ -14,7 +14,8 @@ class App extends Component {
     pages: [
       'pages/index/index',
       'pages/cart/cart',
-      'pages/user/user'
+      'pages/user/user',
+      'pages/chat/chat'
     ],
     window: {
       backgroundTextStyle: 'light',
@@ -35,9 +36,15 @@ class App extends Component {
           text: "首页"
         },
         {
+          pagePath: "pages/chat/chat",
+          iconPath: "./assets/tab-bar/chat.png",
+          selectedIconPath: "./assets/tab-bar/chat-active.png",
+          text: "客服"
+        },
+        {
           pagePath: "pages/cart/cart",
-          iconPath: "./assets/tab-bar/cate.png",
-          selectedIconPath: "./assets/tab-bar/cate-active.png",
+          iconPath: "./assets/tab-bar/cart.png",
+          selectedIconPath: "./assets/tab-bar/cart-active.png",
           text: "购物车"
         },
         {

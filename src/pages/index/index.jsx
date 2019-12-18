@@ -99,6 +99,8 @@ export default class Index extends Component {
         {/* 首页图片滑动 */}
         <SwiperCompoent items={this.state.items} />
 
+        {/* 团购价或者分类 */}
+
         <Text>主页面</Text>
       </View>
     )
