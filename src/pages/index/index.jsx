@@ -53,7 +53,7 @@ export default class Index extends Component {
     setTimeout(() => {
       window.location.reload();
       Taro.stopPullDownRefresh();
-    }, 100)
+    }, 0);
   }
 
   /**

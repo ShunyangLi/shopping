@@ -1,8 +1,10 @@
 import Taro, { Component } from '@tarojs/taro'
 import {Image, Text, View} from '@tarojs/components'
-import { AtSegmentedControl, AtInput, AtButton }  from 'taro-ui'
+import { AtSegmentedControl, AtInput, AtButton,AtNavBar }  from 'taro-ui'
 import LOGO from './assets/LOGO.png'
 import './login.scss'
+
+let timer = null;
 
 export default class Login extends Component {
   constructor(props) {
@@ -12,6 +14,8 @@ export default class Login extends Component {
       loading: false,
       phone: '',
       password: '',
+      info: '发送验证码',
+      num: 60,
     }
   }
 
@@ -46,19 +50,66 @@ export default class Login extends Component {
   };
 
 
+  /**
+   * 发送验证码
+   * 首先设置倒计时
+   */
   sendMessage = () => {
+    if (timer !== null) return;
+    timer = setInterval(() => {
+      let counter = this.state.num + 's';
+      let num = this.state.num - 1;
+      console.log(num);
+      this.setState({
+        info: counter,
+        num: num,
+      });
+      if (this.state.num <= 0) {
+        clearTimeout(timer);
+        timer = null;
+        this.setState({
+          info: '发送验证码',
+          num: 60
+        });
+      }
+    },1000);
+
     Taro.showToast({
       title: '短信已发送，请注意查收',
+      icon: 'success',
       duration: 1000
     }).then(res => {
       console.log(res);
     });
   };
 
+  /**
+   * 点击返回按钮的时候
+   * 返回到个人中心
+   */
+  handleBack = () => {
+    Taro.navigateTo({
+      url: '/pages/user/user'
+    }).then(res => {
+      console.log(res);
+    });
+  };
+
+
   render() {
+    let {info} = this.state;
     return (
-      <View className='views'>
+      <View>
+        {/* 返回导航栏 */}
+        <AtNavBar
+          onClickLeftIcon={this.handleBack}
+          leftIconType='chevron-left'
+          title='用户登录'
+          color='#346FC2'
+        />
+
         <AtSegmentedControl
+          className='views'
           values={['密码登陆', '短信登陆']}
           onClick={this.handleChangeTab.bind(this)}
           current={this.state.current}
@@ -71,7 +122,6 @@ export default class Login extends Component {
                 </View>
                 <View className='login-wrap'>
                     <AtInput
-                      className='input'
                       name='phone'
                       border
                       type='phone'
@@ -80,7 +130,6 @@ export default class Login extends Component {
                       onChange={this.changePhone.bind(this)}
                     />
                     <AtInput
-                      className='input'
                       name='password'
                       border
                       type='password'
@@ -95,6 +144,7 @@ export default class Login extends Component {
                   >
                     登录
                   </AtButton>
+                  <Text className='forget-password'>忘记密码?</Text>
                 </View>
             </View>
             :
@@ -105,7 +155,6 @@ export default class Login extends Component {
               </View>
               <View className='login-wrap'>
                 <AtInput
-                  className='input'
                   name='phone'
                   border
                   type='phone'
@@ -114,7 +163,6 @@ export default class Login extends Component {
                   onChange={this.changePhone.bind(this)}
                 />
                 <AtInput
-                  className='input'
                   name='password'
                   border
                   type='password'
@@ -122,7 +170,7 @@ export default class Login extends Component {
                   value={this.state.password}
                   onChange={this.changePassword.bind(this)}
                 >
-                  <Text onClick={this.sendMessage}>发送验证码</Text>
+                  <Text onClick={this.sendMessage}>{info}</Text>
                 </AtInput>
                 <AtButton
                   className='login-button'
