@@ -20,6 +20,11 @@ export default class Login extends Component {
     }
   }
 
+  // eslint-disable-next-line react/sort-comp
+  config = {
+    navigationBarTitleText: '用户登录'
+  };
+
   componentWillMount () { }
 
   componentDidMount () { }

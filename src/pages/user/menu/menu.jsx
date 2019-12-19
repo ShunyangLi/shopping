@@ -19,6 +19,13 @@ export default class Menu extends Component {
 
   componentDidHide () { }
 
+  handleAddress = () => {
+    Taro.navigateTo({
+      url: '/pages/address/address'
+    }).then(res => {
+      console.log(res);
+    });
+  };
 
   render() {
     return (
@@ -59,7 +66,7 @@ export default class Menu extends Component {
       <AtList>
         <AtListItem title='个人资料' arrow='right' />
         <AtListItem title='全部订单' arrow='right' />
-        <AtListItem title='地址管理' arrow='right' />
+        <AtListItem title='地址管理' arrow='right' onClick={this.handleAddress} />
         <AtListItem title='我的足迹' arrow='right' />
         <AtListItem title='意见反馈' arrow='right' />
         <AtListItem title='推广二维码' arrow='right' />

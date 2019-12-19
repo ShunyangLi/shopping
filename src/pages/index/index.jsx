@@ -1,6 +1,6 @@
 import Taro, { Component } from '@tarojs/taro'
 import {View, Text} from '@tarojs/components'
-import { AtSearchBar } from 'taro-ui'
+import { AtSearchBar, AtIcon } from 'taro-ui'
 import SwiperCompoent from './swiper-component/swiperc'
 import './index.scss'
 

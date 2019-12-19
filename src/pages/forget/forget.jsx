@@ -22,6 +22,11 @@ export default class ForgetPassword extends Component {
     }
   }
 
+  // eslint-disable-next-line react/sort-comp
+  config = {
+    navigationBarTitleText: '忘记密码'
+  };
+
   componentWillMount () { }
 
   componentDidMount () { }

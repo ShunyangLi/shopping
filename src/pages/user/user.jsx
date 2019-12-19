@@ -1,5 +1,5 @@
 import Taro, { Component } from '@tarojs/taro'
-import {View, Text} from '@tarojs/components'
+import {View} from '@tarojs/components'
 import Profile from "./profile/profile";
 import Menu from "./menu/menu";
 import './user.scss'
