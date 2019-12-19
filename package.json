@@ -29,6 +29,7 @@
 	"author": "",
 	"license": "MIT",
 	"dependencies": {
+		"@fortawesome/fontawesome-free": "^5.12.0",
 		"@tarojs/components": "2.0.0-beta.8",
 		"@tarojs/components-qa": "2.0.0-beta.8",
 		"@tarojs/router": "2.0.0-beta.8",

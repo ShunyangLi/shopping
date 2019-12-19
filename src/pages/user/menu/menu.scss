@@ -1,0 +1,31 @@
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/brands";
+@import "~@fortawesome/fontawesome-free/scss/regular";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+@import "~@fortawesome/fontawesome-free/scss/v4-shims";
+
+.button {
+  width: 15%;
+  height: 25%;
+  text-align: center;
+  color: #555555;
+  font: 25px/1 Tahoma,Helvetica,Arial,"\5b8b\4f53",sans-serif;
+  float: left;
+  margin: 0 2%;
+  position: relative;
+}
+
+.icons {
+  width: 100%;
+  margin: 5% 0;
+  font-size: 40px;
+}
+
+.container {
+  display: inline-block;
+  padding: 5% 15px;
+  background-color: white;
+  width: 100%;
+
+}
+

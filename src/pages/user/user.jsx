@@ -1,6 +1,7 @@
 import Taro, { Component } from '@tarojs/taro'
 import {View, Text} from '@tarojs/components'
 import Profile from "./profile/profile";
+import Menu from "./menu/menu";
 import './user.scss'
 
 export default class User extends Component {
@@ -36,9 +37,11 @@ export default class User extends Component {
     return (
       <View className='index'>
 
+        {/* 用户个人信息 */}
         <Profile userProfile={this.state.userProfile} />
 
-        <Text>这是用户中心</Text>
+        {/* 应该是菜单 */}
+        <Menu />
       </View>
     )
   }
