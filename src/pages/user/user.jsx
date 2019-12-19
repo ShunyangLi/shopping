@@ -1,9 +1,23 @@
 import Taro, { Component } from '@tarojs/taro'
-import {View, Text, Button} from '@tarojs/components'
+import {View, Text} from '@tarojs/components'
+import Profile from "./profile/profile";
 import './user.scss'
 
 export default class User extends Component {
 
+  constructor(props) {
+    super(props);
+    this.state = {
+      userProfile: {
+        isLogin: false,
+        avatar: '',
+        nickname: ''
+      }
+    }
+  }
+
+
+  // eslint-disable-next-line react/sort-comp
   config = {
     navigationBarTitleText: '个人中心'
   };
@@ -18,19 +32,13 @@ export default class User extends Component {
 
   componentDidHide () { }
 
-  handleLogin = () => {
-    Taro.navigateTo({
-      url: '/pages/login/login'
-    }).then(res => {
-      console.log(res);
-    });
-  };
-
   render () {
     return (
       <View className='index'>
+
+        <Profile userProfile={this.state.userProfile} />
+
         <Text>这是用户中心</Text>
-        <Button onClick={this.handleLogin}>Login</Button>
       </View>
     )
   }

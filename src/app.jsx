@@ -16,7 +16,8 @@ class App extends Component {
       'pages/cart/cart',
       'pages/user/user',
       'pages/chat/chat',
-      'pages/login/login'
+      'pages/login/login',
+      'pages/forget/forget'
     ],
     window: {
       backgroundTextStyle: 'light',

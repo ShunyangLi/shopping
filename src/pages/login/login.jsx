@@ -1,7 +1,8 @@
 import Taro, { Component } from '@tarojs/taro'
 import {Image, Text, View} from '@tarojs/components'
-import { AtSegmentedControl, AtInput, AtButton,AtNavBar }  from 'taro-ui'
+import { AtSegmentedControl, AtInput, AtButton }  from 'taro-ui'
 import LOGO from './assets/LOGO.png'
+import CustomNavBar from "../../component/CustomNavBar";
 import './login.scss'
 
 let timer = null;
@@ -49,6 +50,13 @@ export default class Login extends Component {
     return value;
   };
 
+  forgetPassword = () => {
+    Taro.navigateTo({
+      url: '/pages/forget/forget'
+    }).then(res => {
+      console.log(res);
+    })
+  };
 
   /**
    * 发送验证码
@@ -83,31 +91,14 @@ export default class Login extends Component {
     });
   };
 
-  /**
-   * 点击返回按钮的时候
-   * 返回到个人中心
-   */
-  handleBack = () => {
-    Taro.navigateTo({
-      url: '/pages/user/user'
-    }).then(res => {
-      console.log(res);
-    });
-  };
-
-
   render() {
     let {info} = this.state;
     return (
       <View>
         {/* 返回导航栏 */}
-        <AtNavBar
-          onClickLeftIcon={this.handleBack}
-          leftIconType='chevron-left'
-          title='用户登录'
-          color='#346FC2'
-        />
+        <CustomNavBar title='用户登录' url='/pages/user/user' />
 
+        {/* tabs 选择 */}
         <AtSegmentedControl
           className='views'
           values={['密码登陆', '短信登陆']}
@@ -144,7 +135,7 @@ export default class Login extends Component {
                   >
                     登录
                   </AtButton>
-                  <Text className='forget-password'>忘记密码?</Text>
+                  <Text onClick={this.forgetPassword} className='forget-password'>忘记密码?</Text>
                 </View>
             </View>
             :
