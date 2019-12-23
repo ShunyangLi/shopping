@@ -18,7 +18,8 @@ class App extends Component {
       'pages/chat/chat',
       'pages/login/login',
       'pages/forget/forget',
-      'pages/address/address'
+      'pages/address/address',
+      'pages/newaddress/newaddress'
     ],
     window: {
       backgroundTextStyle: 'light',

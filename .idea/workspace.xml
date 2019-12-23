@@ -2,21 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8ff7433-2718-40ca-8f1b-54ac3202446e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pages/address/address.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/address/address.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/index/policy/policy.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/index/policy/policy.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/newaddress/newaddress.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/newaddress/newaddress.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/forget/forget.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/forget/forget.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/login/login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/login/login.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/user/menu/assets/credit.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/user/menu/assets/deli.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/user/menu/assets/feedback.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/user/menu/assets/order.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/address.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/tab-bar/cate-active.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/tab-bar/cate.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/address/address.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/address/address.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/address/address.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/address/address.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/user/menu/menu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/user/menu/menu.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/user/menu/menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/user/menu/menu.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/user/user.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/user/user.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/user/user.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/user/user.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +69,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.dev:weapp">
     <configuration name="dev:h5" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -79,8 +80,19 @@
       <envs />
       <method v="2" />
     </configuration>
+    <configuration name="dev:weapp" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev:weapp" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.dev:weapp" />
         <item itemvalue="npm.dev:h5" />
       </list>
     </recent_temporary>

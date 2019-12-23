@@ -1,12 +1,46 @@
 import Taro, { Component } from '@tarojs/taro'
 import {View} from "@tarojs/components";
-import { AtDivider, AtList, AtListItem, AtIcon } from "taro-ui"
+import { ClIcon, ClMenuList} from "mp-colorui";
 import './menu.scss'
 
 
 export default class Menu extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      menus: [
+        {
+          title: "个人资料",
+          arrow: true,
+          url: ''
+        },
+        {
+          title: "全部订单",
+          arrow: true,
+          url: ''
+        },
+        {
+          title: "地址管理",
+          arrow: true,
+          url: '/pages/address/address'
+        },
+        {
+          title: "我的足迹",
+          arrow: true,
+          url: ''
+        },
+        {
+          title: "意见反馈",
+          arrow: true,
+          url: ''
+        },
+        {
+          title: "推广二维码",
+          arrow: true,
+          url: ''
+        }
+      ]
+    }
   }
 
   componentWillMount () { }
@@ -19,9 +53,10 @@ export default class Menu extends Component {
 
   componentDidHide () { }
 
-  handleAddress = () => {
+  clickMenu = (index) => {
+    let url = this.state.menus[index].url;
     Taro.navigateTo({
-      url: '/pages/address/address'
+      url: url
     }).then(res => {
       console.log(res);
     });
@@ -30,47 +65,40 @@ export default class Menu extends Component {
   render() {
     return (
       <View>
-        <AtDivider content='我的订单' fontColor='#ed3f14' />
-
        <View className='container'>
          <View className='button'>
-           <AtIcon value='credit-card icons' prefixClass='fa' />
+           <ClIcon iconName='pay' />
            {/* eslint-disable-next-line react/forbid-elements */}
            <p>待付款</p>
          </View>
          <View className='button'>
-           <AtIcon value='fal fa-box icons' prefixClass='fa' />
+           <ClIcon iconName='send icons' />
            {/* eslint-disable-next-line react/forbid-elements */}
            <p>待收货</p>
          </View>
 
          <View className='button'>
-           <AtIcon value='fal fa-truck icons' prefixClass='fa' />
+           <ClIcon iconName='deliver icons' />
            {/* eslint-disable-next-line react/forbid-elements */}
            <p>待发货</p>
          </View>
 
          <View className='button'>
-           <AtIcon value='fal fa-comment icons' prefixClass='fa' />
+           <ClIcon iconName='comment icons' />
            {/* eslint-disable-next-line react/forbid-elements */}
            <p>待评价</p>
          </View>
 
          <View className='button'>
-           <AtIcon value='fal fa-hands icons' prefixClass='fa' />
+           <ClIcon iconName='question icons' />
            {/* eslint-disable-next-line react/forbid-elements */}
-           <p>售后/退款</p>
+           <p>售后</p>
          </View>
        </View>
 
-      <AtList>
-        <AtListItem title='个人资料' arrow='right' />
-        <AtListItem title='全部订单' arrow='right' />
-        <AtListItem title='地址管理' arrow='right' onClick={this.handleAddress} />
-        <AtListItem title='我的足迹' arrow='right' />
-        <AtListItem title='意见反馈' arrow='right' />
-        <AtListItem title='推广二维码' arrow='right' />
-      </AtList>
+        {/* 操作按钮 */}
+        <ClMenuList list={this.state.menus} onClick={this.clickMenu.bind(this)} />
+
       </View>
     )
   }

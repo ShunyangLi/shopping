@@ -29,9 +29,9 @@
 	"author": "",
 	"license": "MIT",
 	"dependencies": {
-		"@fortawesome/fontawesome-free": "^5.12.0",
 		"@tarojs/components": "2.0.0-beta.8",
 		"@tarojs/components-qa": "2.0.0-beta.8",
+		"@tarojs/mini-runner": "^2.0.0-beta.10",
 		"@tarojs/router": "2.0.0-beta.8",
 		"@tarojs/taro": "2.0.0-beta.8",
 		"@tarojs/taro-alipay": "2.0.0-beta.8",
@@ -42,6 +42,7 @@
 		"@tarojs/taro-tt": "2.0.0-beta.8",
 		"@tarojs/taro-weapp": "2.0.0-beta.8",
 		"babel-plugin-import": "^1.13.0",
+		"mp-colorui": "^0.6.4",
 		"nerv-devtools": "^1.5.6",
 		"nervjs": "^1.5.6",
 		"taro-ui": "^2.2.4"

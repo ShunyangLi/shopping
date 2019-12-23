@@ -35,8 +35,7 @@ export default class User extends Component {
 
   render () {
     return (
-      <View className='index'>
-
+      <View>
         {/* 用户个人信息 */}
         <Profile userProfile={this.state.userProfile} />
 
