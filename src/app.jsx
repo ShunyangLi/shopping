@@ -19,7 +19,8 @@ class App extends Component {
       'pages/login/login',
       'pages/forget/forget',
       'pages/address/address',
-      'pages/newaddress/newaddress'
+      'pages/newaddress/newaddress',
+      'pages/item/item'
     ],
     window: {
       backgroundTextStyle: 'light',

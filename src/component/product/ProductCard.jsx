@@ -7,11 +7,22 @@ export default class ProductCard extends Component {
     super(props);
   }
 
-  render() {
-    let {url, price, title, key} = this.props;
-    return (
-      <View className='card' key={key}>
+  itemDetails = (id) => {
+    Taro.navigateTo({
+      url: `/pages/item/item?itemId=${id}`
+    }).then(res => {
+      console.log(res);
+    });
+  };
 
+  render() {
+    const {url, price, title, itemID} = this.props;
+    return (
+      <View
+        className='card'
+        key={itemID}
+        onClick={this.itemDetails.bind(this, itemID)}
+      >
         <Image className='img' src={url} />
         <View className='body'>
           {title}

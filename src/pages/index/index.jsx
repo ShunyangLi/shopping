@@ -16,31 +16,37 @@ const goodsList = [
     image: 'http://www.littlegend.com/static/img/itemImg/%E7%88%B1%E4%BB%96%E7%BE%8E%E9%93%82%E9%87%91%E4%B8%80%E6%AE%B5/main.jpg',
     title: '爱他美铂金一段',
     price: 32.5,
+    id: 1
   },
   {
     image: 'http://www.littlegend.com/static/img/itemImg/%E7%88%B1%E4%BB%96%E7%BE%8E%E9%93%82%E9%87%91%E4%B8%80%E6%AE%B5/main.jpg',
     title: '爱他美铂金二段',
     price: 31.5,
+    id: 2
   },
   {
     image: 'http://www.littlegend.com/static/img/itemImg/%E7%88%B1%E4%BB%96%E7%BE%8E%E9%93%82%E9%87%91%E4%B8%80%E6%AE%B5/main.jpg',
     title: '爱他美铂金三段',
     price: 30.5,
+    id: 3
   },
   {
     image: 'http://www.littlegend.com/static/img/itemImg/%E7%88%B1%E4%BB%96%E7%BE%8E%E9%93%82%E9%87%91%E4%B8%80%E6%AE%B5/main.jpg',
     title: '爱他美铂金四段',
     price: 12.5,
+    id: 4
   },
   {
     image: 'http://www.littlegend.com/static/img/itemImg/%E7%88%B1%E4%BB%96%E7%BE%8E%E9%93%82%E9%87%91%E4%B8%80%E6%AE%B5/main.jpg',
     title: '爱他美铂金五段',
     price: 14.5,
+    id: 5
   },
   {
     image: 'http://www.littlegend.com/static/img/itemImg/%E7%88%B1%E4%BB%96%E7%BE%8E%E9%93%82%E9%87%91%E4%B8%80%E6%AE%B5/main.jpg',
     title: '爱他美铂金六段',
     price: 31.5,
+    id: 6
   },
 ];
 
@@ -172,6 +178,7 @@ export default class Index extends Component {
               {goodsList.map((item, index) => (
                 <ProductCard
                   key={index}
+                  itemID={item.id}
                   title={item.title}
                   url={item.image}
                   price={item.price}
