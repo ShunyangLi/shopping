@@ -1,5 +1,6 @@
 import Taro, { Component } from '@tarojs/taro'
 import { AtNavBar }  from 'taro-ui'
+import './custombar.scss'
 
 export default class CustomNavBar extends Component {
 
@@ -12,7 +13,7 @@ export default class CustomNavBar extends Component {
    * 返回到个人中心
    */
   handleBack = () => {
-    Taro.navigateTo({
+    Taro.switchTab({
       url: this.props.url
     }).then(res => {
       console.log(res);

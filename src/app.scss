@@ -1,6 +1,25 @@
-@import "~taro-ui/dist/style/index.scss";
+// 导入taro UI 但不是全局，不然文件过大
+//@import "~taro-ui/dist/style/index.scss";
 
 // 导入mp color ui
 //@import "~mp-colorui/dist/style/index.scss";
 @import "~mp-colorui/dist/style/baseCSS.scss";
+@import "~mp-colorui/dist/style/components/icon.scss";
+@import "~mp-colorui/dist/style/components/floatButton.scss";
+@import "~mp-colorui/dist/style/components/select.scss";
+@import "~mp-colorui/dist/style/components/menuList.scss";
+
+// taro UI
+@import "~taro-ui/dist/style/components/flex.scss";
+@import "~taro-ui/dist/style/components/nav-bar.scss";
+@import "~taro-ui/dist/style/components/divider.scss";
+@import "~taro-ui/dist/style/components/input.scss";
+@import "~taro-ui/dist/style/components/button.scss";
+@import "~taro-ui/dist/style/components/search-bar.scss";
+@import "~taro-ui/dist/style/components/segmented-control.scss";
+@import "~taro-ui/dist/style/components/avatar.scss";
+@import "~taro-ui/dist/style/components/icon.scss";
+
+
+
 

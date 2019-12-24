@@ -2,21 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8ff7433-2718-40ca-8f1b-54ac3202446e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pages/newaddress/newaddress.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/newaddress/newaddress.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/custombar.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/address.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/tab-bar/cate-active.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/tab-bar/cate.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/address/address.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/address/address.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/AddressPicker.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/CustomNavBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/CustomNavBar.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/address/address.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/address/address.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/user/menu/menu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/user/menu/menu.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/user/menu/menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/user/menu/menu.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/user/user.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/user/user.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/newaddress/newaddress.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/newaddress/newaddress.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/user/user.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/user/user.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -69,7 +62,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.dev:weapp">
+  <component name="RunManager" selected="npm.dev:h5">
     <configuration name="dev:h5" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -92,8 +85,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.dev:weapp" />
         <item itemvalue="npm.dev:h5" />
+        <item itemvalue="npm.dev:weapp" />
       </list>
     </recent_temporary>
   </component>
