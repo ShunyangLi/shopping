@@ -1,8 +1,18 @@
 import Taro, { Component } from '@tarojs/taro'
-import { View, Text } from '@tarojs/components'
+import { View, Image} from '@tarojs/components'
+import { AtInput } from 'taro-ui'
 import './chat.scss'
 
+const send = require('./assets/send.png');
+
 export default class Chat extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      message: ''
+    }
+  }
+
   config = {
     navigationBarTitleText: '客服'
   };
@@ -17,10 +27,16 @@ export default class Chat extends Component {
 
   componentDidHide () { }
 
+  handleChange = (value) => {
+    this.setState({
+      message: value
+    })
+  };
+
   render () {
     return (
-      <View className='index'>
-        <Text>这是客服聊天界面</Text>
+      <View>
+        Chat page
       </View>
     )
   }

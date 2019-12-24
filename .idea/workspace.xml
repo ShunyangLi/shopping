@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8ff7433-2718-40ca-8f1b-54ac3202446e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/component/product/ProductCard.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/product/ProductCard.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/style.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/chat/assets/send.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/product/ProductCard.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/product/ProductCard.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/product/ProductCard.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/product/ProductCard.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/chat/chat.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/chat/chat.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/chat/chat.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/chat/chat.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index/swiper-component/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/swiper/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index/swiper-component/swiperc.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/swiper/swiperc.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/user/profile/profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/user/profile/profile.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,7 +24,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages/index/assets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages/chat/assets" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.stylelint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -43,11 +43,11 @@
       <recent name="$PROJECT_DIR$/src/pages/index/swiper-component" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pages/chat/assets" />
       <recent name="$PROJECT_DIR$/src/pages/index/assets" />
       <recent name="$PROJECT_DIR$/src/pages/user/menu/assets" />
       <recent name="$PROJECT_DIR$/src/pages/user/assets" />
       <recent name="$PROJECT_DIR$/src/assets" />
-      <recent name="$PROJECT_DIR$/src/pages/login/assets" />
     </key>
   </component>
   <component name="RunDashboard">

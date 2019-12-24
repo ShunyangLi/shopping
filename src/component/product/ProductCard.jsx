@@ -1,5 +1,5 @@
 import Taro, {Component} from '@tarojs/taro';
-import {View, Image} from '@tarojs/components';
+import { View, Image } from '@tarojs/components'
 import './ProductCard.scss'
 
 export default class ProductCard extends Component {
@@ -8,11 +8,11 @@ export default class ProductCard extends Component {
   }
 
   render() {
-    let {src, price, title} = this.props;
+    let {url, price, title, key} = this.props;
     return (
-      <View className='card'>
-        <Image src={src} className='img' />
+      <View className='card' key={key}>
 
+        <Image className='img' src={url} />
         <View className='body'>
           {title}
           <View className='price'>

@@ -33,7 +33,7 @@ export default class Profile extends Component {
 
   render() {
     let {userProfile} = this.props;
-    console.log(userProfile);
+    // console.log(userProfile);
     return (
       <View className='profile'>
         <Image src={backgroud} className='profile-backgroud' mode='widthFix' />
