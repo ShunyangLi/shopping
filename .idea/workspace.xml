@@ -2,16 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8ff7433-2718-40ca-8f1b-54ac3202446e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/pages/index/nav/appnav.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/product/ProductCard.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/product/ProductCard.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/style.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/CustomNavBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/CustomNavBar.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index/policy/policy.jsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index/policy/policy.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/nav/appnav.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index/swiper-component/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/swiper-component/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/user/menu/menu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/user/menu/menu.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/user/menu/menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/user/menu/menu.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index/swiper-component/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/swiper/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index/swiper-component/swiperc.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/swiper/swiperc.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,6 +38,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/component/custom" />
       <recent name="$PROJECT_DIR$/src/pages" />
       <recent name="$PROJECT_DIR$/src/pages/index/swiper-component" />
     </key>
@@ -86,8 +85,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.dev:weapp" />
         <item itemvalue="npm.dev:h5" />
+        <item itemvalue="npm.dev:weapp" />
       </list>
     </recent_temporary>
   </component>

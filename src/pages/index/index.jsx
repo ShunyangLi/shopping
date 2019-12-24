@@ -1,9 +1,48 @@
 import Taro, { Component } from '@tarojs/taro'
-import {View, Text} from '@tarojs/components'
+import {View, Text, ScrollView} from '@tarojs/components'
 import { AtSearchBar, AtNoticebar } from 'taro-ui'
-import SwiperCompoent from './swiper-component/swiperc'
+import SwiperCompoent from './swiper/swiperc'
 import './index.scss'
 import AppNav from "./nav/appnav";
+import ProductCard from "../../component/product/ProductCard";
+import { getWindowHeight } from '../../utils/style'
+
+
+// 默认商品数量
+// const ITEMSIZE = 20;
+
+const goodsList = [
+  {
+    image: 'http://www.littlegend.com/static/img/itemImg/%E7%88%B1%E4%BB%96%E7%BE%8E%E9%93%82%E9%87%91%E4%B8%80%E6%AE%B5/main.jpg',
+    title: '爱他美铂金一段',
+    price: 34.5,
+  },
+  {
+    image: 'http://www.littlegend.com/static/img/itemImg/%E7%88%B1%E4%BB%96%E7%BE%8E%E9%93%82%E9%87%91%E4%B8%80%E6%AE%B5/main.jpg',
+    title: '爱他美铂金一段',
+    price: 34.5,
+  },
+  {
+    image: 'http://www.littlegend.com/static/img/itemImg/%E7%88%B1%E4%BB%96%E7%BE%8E%E9%93%82%E9%87%91%E4%B8%80%E6%AE%B5/main.jpg',
+    title: '爱他美铂金一段',
+    price: 34.5,
+  },
+  {
+    image: 'http://www.littlegend.com/static/img/itemImg/%E7%88%B1%E4%BB%96%E7%BE%8E%E9%93%82%E9%87%91%E4%B8%80%E6%AE%B5/main.jpg',
+    title: '爱他美铂金一段',
+    price: 34.5,
+  },
+  {
+    image: 'http://www.littlegend.com/static/img/itemImg/%E7%88%B1%E4%BB%96%E7%BE%8E%E9%93%82%E9%87%91%E4%B8%80%E6%AE%B5/main.jpg',
+    title: '爱他美铂金一段',
+    price: 34.5,
+  },
+  {
+    image: 'http://www.littlegend.com/static/img/itemImg/%E7%88%B1%E4%BB%96%E7%BE%8E%E9%93%82%E9%87%91%E4%B8%80%E6%AE%B5/main.jpg',
+    title: '爱他美铂金一段',
+    price: 34.5,
+  },
+];
 
 export default class Index extends Component {
 
@@ -24,7 +63,8 @@ export default class Index extends Component {
           key: '3',
           url: 'http://littlegend.com/static/img/example1.jpg'
         }
-      ]
+      ],
+      loading: false
     };
   }
 
@@ -85,6 +125,13 @@ export default class Index extends Component {
     });
   };
 
+  handleLoading = () => {
+    console.log("loading");
+    this.setState({
+      loading: true
+    })
+  };
+
   render () {
     return (
       <View>
@@ -97,27 +144,48 @@ export default class Index extends Component {
           onBlur={this.handleClear.bind(this)}
         />
 
-        {/* 首页图片滑动 */}
-        <SwiperCompoent items={this.state.items} />
-
-        {/* 消息通知 */}
-        <AtNoticebar
-          close
-          marquee
-          single
-          icon='volume-plus'
+        <ScrollView
+          scrollY
+          style={{ height: getWindowHeight() }}
+          onScrollToLower={this.handleLoading}
         >
-          所有商品均有澳洲本地发货。保证澳洲本地原装正品。
-        </AtNoticebar>
+          {/* 首页图片滑动 */}
+          <SwiperCompoent items={this.state.items} />
+
+          {/* 消息通知 */}
+          <AtNoticebar
+            close
+            marquee
+            single
+            icon='volume-plus'
+          >
+            所有商品均有澳洲本地发货。保证澳洲本地原装正品。
+          </AtNoticebar>
 
 
-        {/* 分类 */}
-        <AppNav />
-
-        {/* 商品 */}
+          {/* 分类 */}
+          <AppNav />
 
 
-        <Text>主页面</Text>
+          {/* 商品 */}
+            <View className='product-list'>
+              {goodsList.map((item, index) => (
+                <ProductCard
+                  key={index}
+                  title={item.title}
+                  src={item.image}
+                  price={item.price}
+                />
+              ))}
+            </View>
+        </ScrollView>
+
+        {/* 显示正在加载 */}
+          {this.state.loading &&
+          <View className='loading'>
+            <Text className='loading-txt'>正在加载中...</Text>
+          </View>
+        }
       </View>
     )
   }

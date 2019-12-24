@@ -1,0 +1,82 @@
+
+.card {
+  position: relative;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: none;
+  border-radius: 10px;
+  padding-bottom: 3px;
+  float: left;
+  font: 30px/1 Tahoma,Helvetica,Arial,"\5b8b\4f53",sans-serif;
+  width: 46%;
+  margin: 3% 2%;
+  overflow: hidden;
+
+  .img {
+    width: 100%;
+    height: 80%;
+  }
+
+  .body {
+    margin: 2% 0;
+    padding: 0 15px;
+    white-space: nowrap;
+    word-break: break-all;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font: 30px/1 Tahoma,Helvetica,Arial,"\5b8b\4f53",sans-serif;
+    color: #555555;
+
+    .price {
+      font: 50px/1 Tahoma,Helvetica,Arial,"\5b8b\4f53",sans-serif;
+      color: coral;
+      &::before {
+        content: '$';
+      }
+    }
+  }
+}
+
+
+.product-card {
+  width: 100%;
+  overflow: hidden;
+  background: white;
+
+  .img {
+    width: 100%;
+  }
+
+  .title {
+    font-size: 30px;
+    white-space: nowrap;
+    word-break: break-all;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .price {
+    color: red;
+    display: inline-block;
+    line-height: 20px;
+    font-size: 25px;
+    &::before {
+      content: '￥';
+    }
+  }
+
+  .originalPrice {
+    flex: 0 0 auto;
+    color: #999;
+    line-height: 20px;
+    font-size: 20px;
+    padding-left: 20px;
+    display: inline-block;
+    text-decoration: line-through;
+    &::before {
+      content: '$';
+    }
+  }
+}
