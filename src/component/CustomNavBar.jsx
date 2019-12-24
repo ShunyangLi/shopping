@@ -1,11 +1,15 @@
 import Taro, { Component } from '@tarojs/taro'
 import { AtNavBar }  from 'taro-ui'
 import './custombar.scss'
+import {View} from "@tarojs/components";
 
 export default class CustomNavBar extends Component {
 
   constructor(props) {
     super(props);
+    this.state = {
+      type: process.env.TARO_ENV
+    }
   }
 
   /**
@@ -13,7 +17,7 @@ export default class CustomNavBar extends Component {
    * 返回到个人中心
    */
   handleBack = () => {
-    Taro.switchTab({
+    Taro.navigateTo({
       url: this.props.url
     }).then(res => {
       console.log(res);
@@ -22,13 +26,16 @@ export default class CustomNavBar extends Component {
 
   render() {
     let title = this.props.title;
+    let {type} = this.state;
     return (
-      <AtNavBar
+      <View>
+      {type === 'h5' ? <AtNavBar
         onClickLeftIcon={this.handleBack}
         leftIconType='chevron-left'
         title={title}
         color='#346FC2'
-      />
+      />: ''}
+      </View>
     )
   }
 

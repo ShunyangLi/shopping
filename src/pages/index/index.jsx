@@ -1,8 +1,9 @@
 import Taro, { Component } from '@tarojs/taro'
 import {View, Text} from '@tarojs/components'
-import { AtSearchBar } from 'taro-ui'
+import { AtSearchBar, AtNoticebar } from 'taro-ui'
 import SwiperCompoent from './swiper-component/swiperc'
 import './index.scss'
+import AppNav from "./nav/appnav";
 
 export default class Index extends Component {
 
@@ -86,9 +87,10 @@ export default class Index extends Component {
 
   render () {
     return (
-      <View className='index'>
+      <View>
         {/* 搜索框 */}
         <AtSearchBar
+          fixed
           value={this.state.searchValue}
           onChange={this.onChange.bind(this)}
           onActionClick={this.handleSearch.bind(this)}
@@ -98,7 +100,22 @@ export default class Index extends Component {
         {/* 首页图片滑动 */}
         <SwiperCompoent items={this.state.items} />
 
-        {/* 团购价或者分类 */}
+        {/* 消息通知 */}
+        <AtNoticebar
+          close
+          marquee
+          single
+          icon='volume-plus'
+        >
+          所有商品均有澳洲本地发货。保证澳洲本地原装正品。
+        </AtNoticebar>
+
+
+        {/* 分类 */}
+        <AppNav />
+
+        {/* 商品 */}
+
 
         <Text>主页面</Text>
       </View>

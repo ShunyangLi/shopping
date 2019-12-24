@@ -2,15 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8ff7433-2718-40ca-8f1b-54ac3202446e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/component/custombar.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/index/nav/appnav.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/component/AddressPicker.jsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/component/CustomNavBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/CustomNavBar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/address/address.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/address/address.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/newaddress/newaddress.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/newaddress/newaddress.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/user/user.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/user/user.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index/policy/policy.jsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index/policy/policy.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/nav/appnav.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index/swiper-component/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/swiper-component/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/user/menu/menu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/user/menu/menu.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/user/menu/menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/user/menu/menu.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,7 +26,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages/user/menu/assets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages/index/assets" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.stylelint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -43,11 +44,11 @@
       <recent name="$PROJECT_DIR$/src/pages/index/swiper-component" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pages/index/assets" />
       <recent name="$PROJECT_DIR$/src/pages/user/menu/assets" />
       <recent name="$PROJECT_DIR$/src/pages/user/assets" />
       <recent name="$PROJECT_DIR$/src/assets" />
       <recent name="$PROJECT_DIR$/src/pages/login/assets" />
-      <recent name="$PROJECT_DIR$/src/assets/tab-bar" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -85,8 +86,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.dev:h5" />
         <item itemvalue="npm.dev:weapp" />
+        <item itemvalue="npm.dev:h5" />
       </list>
     </recent_temporary>
   </component>

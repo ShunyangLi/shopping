@@ -1,3 +1,4 @@
+@import "~taro-ui/dist/style/components/flex.scss";
 
 .button {
   width: 14%;
@@ -16,10 +17,9 @@
 }
 
 .container {
-  display: inline-block;
-  padding: 5% 15px;
+  padding: 2%;
   background-color: white;
   width: 100%;
-
+  text-align: center;
 }
 

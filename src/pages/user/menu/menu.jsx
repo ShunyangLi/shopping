@@ -66,39 +66,38 @@ export default class Menu extends Component {
     return (
       <View>
        <View className='container'>
-         <View className='button'>
-           <ClIcon iconName='pay' />
-           {/* eslint-disable-next-line react/forbid-elements */}
-           <p>待付款</p>
-         </View>
-         <View className='button'>
-           <ClIcon iconName='send icons' />
-           {/* eslint-disable-next-line react/forbid-elements */}
-           <p>待收货</p>
-         </View>
-
-         <View className='button'>
-           <ClIcon iconName='deliver icons' />
-           {/* eslint-disable-next-line react/forbid-elements */}
-           <p>待发货</p>
-         </View>
-
-         <View className='button'>
-           <ClIcon iconName='comment icons' />
-           {/* eslint-disable-next-line react/forbid-elements */}
-           <p>待评价</p>
-         </View>
-
-         <View className='button'>
-           <ClIcon iconName='question icons' />
-           {/* eslint-disable-next-line react/forbid-elements */}
-           <p>售后</p>
+         <View className='at-row at-row__align--center'>
+           <View className='at-col'>
+             <ClIcon iconName='pay' />
+             <View className='at-col'>
+               待付款
+             </View>
+           </View>
+           <View className='at-col'>
+             <ClIcon iconName='send icons' />
+             <View className='at-col'>
+             待收货
+             </View>
+           </View>
+           <View className='at-col'>
+             <ClIcon iconName='deliver icons' />
+             <View className='at-col'>
+             待发货
+             </View>
+           </View>
+           <View className='at-col'>
+             <ClIcon iconName='recharge icons' />
+             <View className='at-col'>
+             售后
+             </View>
+           </View>
          </View>
        </View>
 
-        {/* 操作按钮 */}
-        <ClMenuList list={this.state.menus} onClick={this.clickMenu.bind(this)} />
-
+        <View style='margin-top: 2%'>
+          {/* 操作按钮 */}
+          <ClMenuList list={this.state.menus} onClick={this.clickMenu.bind(this)} />
+        </View>
       </View>
     )
   }
