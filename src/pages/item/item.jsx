@@ -1,5 +1,6 @@
 import Taro, { Component } from '@tarojs/taro'
 import {View} from "@tarojs/components";
+import { AtFloatLayout } from "taro-ui"
 import { ClShopBar } from "mp-colorui";
 import CustomNavBar from "../../component/CustomNavBar";
 
@@ -7,14 +8,14 @@ export default class Item extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      itemID: ''
+      itemID: '',
+      show: false
     }
   }
 
   config = {
     navigationBarTitleText: '商品详情'
   };
-
 
   componentWillMount () {
     this.setState({
@@ -37,6 +38,9 @@ export default class Item extends Component {
 
   clickButtons = (index) => {
     console.log(index);
+    this.setState({
+      show: true
+    })
   };
 
   render() {
@@ -62,15 +66,18 @@ export default class Item extends Component {
       }
     ];
 
-    let {itemID} = this.state;
+    const {itemID} = this.state;
     return (
       <View>
         {/* 返回导航栏 */}
         <CustomNavBar title='商品详情' url='/pages/index/index' />
-        <View>
+
+        {/* 展示详细的信息 */}
+        <View style='position:absolute'>
           {itemID}
         </View>
 
+        {/* footer部分 */}
         <ClShopBar
           fix
           border

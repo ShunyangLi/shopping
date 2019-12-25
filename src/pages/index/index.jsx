@@ -173,7 +173,7 @@ export default class Index extends Component {
           <AppNav />
 
 
-          {/* 商品 */}
+            {/* 商品 */}
             <View className='product-list'>
               {goodsList.map((item, index) => (
                 <ProductCard
