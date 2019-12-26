@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8ff7433-2718-40ca-8f1b-54ac3202446e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/component/popup/pop.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/popup/pop.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/item/base/base.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/item/base/base.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/item/main/main.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/item/main/main.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/item/specific/spec.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/item/specific/spec.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/item/item.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/item/item.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/item/item.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/item/item.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,7 +25,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages/chat/assets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.stylelint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -40,11 +44,11 @@
       <recent name="$PROJECT_DIR$/src/pages/index/swiper-component" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/pages/chat/assets" />
       <recent name="$PROJECT_DIR$/src/pages/index/assets" />
       <recent name="$PROJECT_DIR$/src/pages/user/menu/assets" />
       <recent name="$PROJECT_DIR$/src/pages/user/assets" />
-      <recent name="$PROJECT_DIR$/src/assets" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -59,7 +63,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.dev:weapp">
+  <component name="RunManager" selected="npm.dev:h5">
     <configuration name="dev:h5" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -82,8 +86,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.dev:weapp" />
         <item itemvalue="npm.dev:h5" />
+        <item itemvalue="npm.dev:weapp" />
       </list>
     </recent_temporary>
   </component>

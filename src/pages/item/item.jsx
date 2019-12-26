@@ -3,15 +3,27 @@ import {ScrollView, View} from "@tarojs/components";
 import { ClShopBar } from "mp-colorui";
 import CustomNavBar from "../../component/CustomNavBar";
 import Pop from "../../component/popup/pop";
+import Spec from "./specific/spec";
+import MainImage from "./main/main";
+import Base from "./base/base";
 import {getWindowHeight} from "../../utils/style";
 import './item.scss';
+
+
+const itemData = {
+    image: 'http://www.littlegend.com/static/img/itemImg/%E7%88%B1%E4%BB%96%E7%BE%8E%E9%93%82%E9%87%91%E4%B8%80%E6%AE%B5/main.jpg',
+    title: '爱他美铂金一段',
+    price: 32.5,
+    id: 1
+  };
 
 export default class Item extends Component {
   constructor(props) {
     super(props);
     this.state = {
       itemID: '',
-      visible: false
+      visible: false,
+      selected: {}
     }
   }
 
@@ -48,8 +60,16 @@ export default class Item extends Component {
   toggleVisible = () => {
     this.setState({
       visible: !this.state.visible,
-      selected: {}
     })
+  };
+
+  // 选择商品属性
+  handleSelect = (selected) => {
+    this.setState({
+      selected: selected
+    });
+
+    console.log(selected);
   };
 
   render() {
@@ -81,7 +101,25 @@ export default class Item extends Component {
       }
     ];
 
-    const {itemID} = this.state;
+    const data = {
+      primaryPicUrl: 'http://www.littlegend.com/static/img/itemImg/%E7%88%B1%E4%BB%96%E7%BE%8E%E9%93%82%E9%87%91%E4%B8%80%E6%AE%B5/main.jpg',
+      price: 100
+    };
+
+    const items = [
+      {
+        key: '1',
+        url: 'http://littlegend.com/static/img/example3.jpg'
+      },
+      {
+        key: '2',
+        url: 'http://littlegend.com/static/img/example2.jpg'
+      },
+      {
+        key: '3',
+        url: 'http://littlegend.com/static/img/example1.jpg'
+      }
+    ];
     const height = getWindowHeight(false);
     return (
       <View className='item'>
@@ -94,7 +132,15 @@ export default class Item extends Component {
           className='item-wrap'
           style={{ height }}
         >
-          {itemID}
+          {/* 主页图片 */}
+          <MainImage
+            data={items}
+          />
+
+          {/* 基础信息 */}
+          <Base
+            data={itemData}
+          />
 
         </ScrollView>
 
@@ -104,9 +150,12 @@ export default class Item extends Component {
           onClose={this.toggleVisible}
           compStyle={popupStyle}
         >
-          <View>
-            Hello world
-          </View>
+          <Spec
+            data={data}
+            selected={this.state.selected}
+            onSelect={this.handleSelect}
+          />
+
         </Pop>
 
         {/* footer部分 */}
