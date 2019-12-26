@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8ff7433-2718-40ca-8f1b-54ac3202446e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/component/popup/pop.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/popup/pop.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index/index.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/item/item.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/item/item.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/item/item.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/item/item.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -58,7 +59,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.dev:h5">
+  <component name="RunManager" selected="npm.dev:weapp">
     <configuration name="dev:h5" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -81,8 +82,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.dev:h5" />
         <item itemvalue="npm.dev:weapp" />
+        <item itemvalue="npm.dev:h5" />
       </list>
     </recent_temporary>
   </component>

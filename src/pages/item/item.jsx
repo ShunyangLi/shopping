@@ -1,15 +1,17 @@
 import Taro, { Component } from '@tarojs/taro'
-import {View} from "@tarojs/components";
-import { AtFloatLayout } from "taro-ui"
+import {ScrollView, View} from "@tarojs/components";
 import { ClShopBar } from "mp-colorui";
 import CustomNavBar from "../../component/CustomNavBar";
+import Pop from "../../component/popup/pop";
+import {getWindowHeight} from "../../utils/style";
+import './item.scss';
 
 export default class Item extends Component {
   constructor(props) {
     super(props);
     this.state = {
       itemID: '',
-      show: false
+      visible: false
     }
   }
 
@@ -39,11 +41,24 @@ export default class Item extends Component {
   clickButtons = (index) => {
     console.log(index);
     this.setState({
-      show: true
+      visible: !this.state.visible,
+    });
+  };
+
+  toggleVisible = () => {
+    this.setState({
+      visible: !this.state.visible,
+      selected: {}
     })
   };
 
   render() {
+
+    const popupStyle = process.env.TARO_ENV === 'rn' ?
+      { transform: [{ translateY: Taro.pxTransform(-100) }] } :
+      { transform: `translateY(${Taro.pxTransform(-100)})` };
+
+
     const tabsBorder = [
       {
         icon: 'favor',
@@ -67,15 +82,32 @@ export default class Item extends Component {
     ];
 
     const {itemID} = this.state;
+    const height = getWindowHeight(false);
     return (
-      <View>
+      <View className='item'>
         {/* 返回导航栏 */}
         <CustomNavBar title='商品详情' url='/pages/index/index' />
 
         {/* 展示详细的信息 */}
-        <View style='position:absolute'>
+        <ScrollView
+          scrollY
+          className='item-wrap'
+          style={{ height }}
+        >
           {itemID}
-        </View>
+
+        </ScrollView>
+
+        {/* 弹窗部分 */}
+        <Pop
+          visible={this.state.visible}
+          onClose={this.toggleVisible}
+          compStyle={popupStyle}
+        >
+          <View>
+            Hello world
+          </View>
+        </Pop>
 
         {/* footer部分 */}
         <ClShopBar
