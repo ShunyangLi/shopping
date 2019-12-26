@@ -8,6 +8,7 @@ import MainImage from "./main/main";
 import Base from "./base/base";
 import {getWindowHeight} from "../../utils/style";
 import './item.scss';
+import Detail from "./detail/detail";
 
 
 const itemData = {
@@ -120,6 +121,15 @@ export default class Item extends Component {
         url: 'http://littlegend.com/static/img/example1.jpg'
       }
     ];
+
+    const image = [
+      {
+        url: 'http://www.littlegend.com/static/img/discriptions/%E7%88%B1%E4%BB%96%E7%BE%8E%E9%93%82%E9%87%91%E4%B8%80%E6%AE%B5/O1CN01SR7n8Z1VD5OOSkE8x_!!804182618.jpg'
+      },
+      {
+        url: 'http://www.littlegend.com/static/img/discriptions/%E7%88%B1%E4%BB%96%E7%BE%8E%E9%93%82%E9%87%91%E4%B8%80%E6%AE%B5/O1CN01irdLyu1VD5OL86rXT_!!804182618.jpg'
+      }
+    ];
     const height = getWindowHeight(false);
     return (
       <View className='item'>
@@ -140,6 +150,18 @@ export default class Item extends Component {
           {/* 基础信息 */}
           <Base
             data={itemData}
+          />
+
+          {/* 宝贝详情 */}
+          <View
+            style='margin-top: 5%; text-align: center; color: #989898;font-size:20px'
+          >
+            宝贝详情
+          </View>
+
+          {/* 详情图片 */}
+          <Detail
+            data={image}
           />
 
         </ScrollView>
