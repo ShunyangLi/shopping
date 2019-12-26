@@ -214,7 +214,7 @@ When you find the following error:
   ]
 ```
 
-You can solve by commenting few lines in the `config/index.js` file:
+You can solve by commenting few lines in the `config/index.jsx` file:
 
 ```json
   copy: {

@@ -2,8 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8ff7433-2718-40ca-8f1b-54ac3202446e" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/component/checkbox/assets/checked.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/checkbox/assets/un-checked.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/checkbox/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/component/checkbox/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/cart/empty/assets/empty.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/cart/empty/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/cart/empty/index.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/cart/footer/footer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/cart/footer/footer.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/cart/items/item.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/cart/items/item.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/cart/tip/assets/tip-icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/cart/tip/index.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/cart/tip/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/item/detail/detail.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/item/detail/detail.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/cart/cart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/cart/cart.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/cart/cart.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/cart/cart.scss" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,7 +35,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/pages/cart" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.stylelint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -37,11 +54,11 @@
       <recent name="$PROJECT_DIR$/src/pages/index/swiper-component" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/pages/cart" />
+      <recent name="$PROJECT_DIR$/src/component" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/src/pages/chat/assets" />
       <recent name="$PROJECT_DIR$/src/pages/index/assets" />
-      <recent name="$PROJECT_DIR$/src/pages/user/menu/assets" />
-      <recent name="$PROJECT_DIR$/src/pages/user/assets" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -56,7 +73,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="npm.dev:weapp">
+  <component name="RunManager" selected="npm.dev:h5">
     <configuration name="dev:h5" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -79,8 +96,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.dev:weapp" />
         <item itemvalue="npm.dev:h5" />
+        <item itemvalue="npm.dev:weapp" />
       </list>
     </recent_temporary>
   </component>
