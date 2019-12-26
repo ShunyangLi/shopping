@@ -15,7 +15,7 @@ export default class Detail extends Component {
       <View className='item-detail'>
         {data.map((item, index) => (
           <Image
-            mode='aspectFit'
+            mode='widthFix'
             className='imageDetails'
             key={index}
             src={item.url}
