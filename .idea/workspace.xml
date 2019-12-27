@@ -2,25 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f8ff7433-2718-40ca-8f1b-54ac3202446e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/component/checkbox/assets/checked.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/checkbox/assets/un-checked.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/checkbox/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/component/checkbox/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/cart/empty/assets/empty.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/cart/empty/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/cart/empty/index.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/cart/footer/footer.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/cart/footer/footer.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/cart/items/item.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/cart/items/item.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/cart/tip/assets/tip-icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/cart/tip/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/cart/tip/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/order/order.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/order/order.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/cart/cart.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/cart/cart.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/cart/cart.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/cart/cart.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/popup/pop.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/popup/pop.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/address/address.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/address/address.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/newaddress/newaddress.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/newaddress/newaddress.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/newaddress/newaddress.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/newaddress/newaddress.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/user/menu/menu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/user/menu/menu.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

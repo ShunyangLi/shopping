@@ -50,7 +50,7 @@ export default class Address extends Component {
     });
   };
 
-  deleteAddress = () => {
+  editAddress = () => {
     console.log("删除地址")
   };
 
@@ -72,8 +72,8 @@ export default class Address extends Component {
                   </View>
                 </View>
                 <View className='at-col at-col__offset-2' />
-                <View className='at-col at-col-2 address' key={index} onClick={this.deleteAddress.bind(this)}>
-                  <ClIcon iconName='delete' color='red' onClick={this.deleteAddress.bind(this)} />
+                <View className='at-col at-col-2 address' key={index} onClick={this.editAddress.bind(this)}>
+                  <ClIcon iconName='edit' onClick={this.editAddress.bind(this)} />
                 </View>
               </View>
               <AtDivider customStyle='top: 0%; height: 30px' />

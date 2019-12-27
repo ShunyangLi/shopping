@@ -17,7 +17,7 @@ export default class Menu extends Component {
         {
           title: "全部订单",
           arrow: true,
-          url: ''
+          url: '/pages/order/order'
         },
         {
           title: "地址管理",

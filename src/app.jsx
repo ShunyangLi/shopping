@@ -20,7 +20,8 @@ class App extends Component {
       'pages/forget/forget',
       'pages/address/address',
       'pages/newaddress/newaddress',
-      'pages/item/item'
+      'pages/item/item',
+      'pages/order/order'
     ],
     window: {
       backgroundTextStyle: 'light',

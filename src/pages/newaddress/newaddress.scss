@@ -1,0 +1,29 @@
+
+.container {
+  margin: 2%;
+  position: relative;
+}
+
+.select {
+  text-align: left;
+}
+
+.undefined {
+  position: relative;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex: 1 1 0%;
+  margin-left: 3%;
+}
+
+
+.cu-form-group .title {
+  text-align: justify;
+  padding-right: 0.64rem;
+  font-size: 0.64rem;
+  position: relative;
+  min-height: 1.28rem;
+  line-height: 1.28rem;
+  font-weight: bold;
+}
